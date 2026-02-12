@@ -1,0 +1,16 @@
+{
+  "name": "node-ts",
+  "version": "1.0.0",
+  "description": "Minimalist TS Node project without bloat",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/server.js",
+    "dev": "node --loader ts-node/esm server.ts"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
